@@ -1,0 +1,307 @@
+div.vc_tta-color-grey.vc_tta-style-classic.vc_tta-tabs .vc_tta-panels,
+div.vc_tta-color-grey.vc_tta-style-classic.vc_tta-tabs .vc_tta-panels::after,
+div.vc_tta-color-grey.vc_tta-style-classic.vc_tta-tabs .vc_tta-panels::before {
+  border-color: transparent;
+}
+div.vc_tta-color-grey.vc_tta-style-classic.vc_tta-tabs .vc_tta-panels {
+  background-color: transparent;
+}
+.vc_tta-color-grey.vc_tta-style-classic.vc_tta-tabs .vc_tta-panels .vc_tta-panel-body {
+  border-color: transparent;
+  background-color: rgb(255, 255, 255);
+}
+div.vc_tta.vc_tta-shape-rounded .vc_tta-tab>a {
+  border-radius: 0;
+}
+div.vc_tta-tabs:not([class*=vc_tta-gap]):not(.vc_tta-o-no-fill).vc_tta-tabs-position-top .vc_tta-tab>a {
+  border-radius: 0;
+}
+.vc_tta.vc_tta-spacing-1 .vc_tta-tab {
+  margin: 1px 0 0 1px;
+}
+.vc_tta-container div.vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab>a {
+  border-color: #e3e3e3;
+  border-bottom-color: $primary-color;
+  background-color: transparent;
+  color: #666;
+  border: none;
+}
+div.vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab.vc_active > a {
+  border-color: $primary-color;
+  @extend .primary-color_bg;
+  color: #FFF;
+}
+.vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab > a:focus,
+.vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab > a:hover {
+  background-color: #f8f8f8;
+}
+div.vc_tta-color-grey.vc_tta-style-classic.vc_tta-tabs .vc_tta-panels .vc_tta-panel-body {
+  border-color: rgba(0, 0, 0, 0.09);
+}
+// Custom Tabs
+.wpb-js-composer .vc_tta-container div.vc_tta-color-grey.vc_tta-style-classic.custom-tour {
+  .vc_tta-tabs-container {
+    width: 245px;
+    margin-bottom: 0;
+    margin-top: 20px ;
+    background-color: #FFF;
+    margin-right: 10px;
+    li {
+      a {
+        -webkit-transition: all .35s ease-in-out;
+        transition: all .35s ease-in-out;
+        border-radius: 0;
+        background-color: transparent ;
+        color: #5b6076;
+        font-family: $body-font-family;
+        font-weight: 400;
+        &:hover {
+          font-weight: 700;
+        }
+      }
+      &.vc_active {
+        a {
+          border-right: 5px solid $primary-color;
+          @extend .primary-color_border;
+          background-color: rgba($primary-color, .03);
+          font-weight: 700;
+          i {
+            color: $primary-color;
+            @extend .primary-color_color;
+          }
+        }
+      }
+    }
+  }
+  .vc_tta-panels-container {
+    .vc_tta-panels {
+      border: 0;
+      background-color: transparent ;
+      box-shadow: 0 0px 20px 0 rgba(15,8,49,0.1);
+      margin-top: 20px;
+    }
+  }
+  .vc_tta-panel-body {
+    @media #{$small-only} {
+      padding: 15px !important;
+    }
+    .container {
+      margin-left: -15px;
+      margin-right: -15px;
+      display: flex;
+      @media #{$small-only} {
+        display: block;
+      }
+      .img-wrp {
+        border: 5px solid $primary-color;
+        @extend .primary-color_border;
+        height: 100%;
+        border: 5px solid #0e316b;
+        @media #{$small-only} {
+          margin-bottom: 20px;
+        }
+      }
+      .media {
+        margin-bottom: 40px;
+        .media-left {
+          margin-bottom: 15px;
+          img {
+            margin-right: 15px;
+          }
+          h5 {
+            display: inline-block;
+            margin: 0;
+            font-weight: 600;
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+.wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.vertical-tab {
+  .vc_tta-tabs-container {
+    li {
+      a {
+        -webkit-transition: all .35s ease-in-out;
+        transition: all .35s ease-in-out;
+        border-radius: 0;
+        background-color: transparent ;
+        color: #5b6076;
+        font-family: $body-font-family;
+        font-weight: 400;
+        &:hover {
+          font-weight: 700;
+        }
+      }
+      &.vc_active {
+        a {
+          border-top: 5px solid $primary-color;
+          @extend .primary-color_border;
+          background-color: rgba($primary-color, .03);
+          font-weight: 700;
+          i {
+            color: $primary-color;
+            @extend .primary-color_color;
+          }
+        }
+      }
+    }
+  }
+  .vc_tta-panels-container {
+    .vc_tta-panels {
+      background-color: transparent !important;
+      box-shadow: 0 0px 20px 0 rgba(15,8,49,0.1);
+      margin-top: 2px !important;
+    }
+  }
+  .vc_tta-panel-body {
+    @media #{$small-only} {
+      padding: 15px !important;
+    }
+    .container {
+      margin-left: -15px;
+      margin-right: -15px;
+      display: flex;
+      @media #{$small-only} {
+        display: block;
+      }
+      .img-wrp {
+        border: 5px solid $primary-color;
+        @extend .primary-color_border;
+        height: 100%;
+        border: 5px solid #0e316b;
+        @media #{$small-only} {
+          margin-bottom: 20px;
+        }
+      }
+      .media {
+        margin-bottom: 40px;
+        .media-left {
+          margin-bottom: 15px;
+          img {
+            margin-right: 15px;
+          }
+          h5 {
+            font-size: 17px;
+            display: inline-block;
+            margin: 0;
+            font-weight: 600;
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+.wpb-js-composer .vc_tta-container div.vc_tta-color-grey.vc_tta-style-classic.vertical-accordion {
+  .vc_tta-panels-container {
+    .vc_tta-panel {
+      .vc_tta-panel-title {
+        a {
+          -webkit-transition: all .35s ease-in-out;
+          transition: all .35s ease-in-out;
+          border-radius: 0;
+          background-color: transparent ;
+          color: #5b6076;
+          font-family: $body-font-family;
+          font-weight: 400;
+          padding-left: 20px;
+          .vc_tta-controls-icon {
+            display: none;
+          }
+          &:hover {
+            background-color: transparent;
+            font-weight: 700;
+          }
+        }
+      }
+      &.vc_active {
+        .vc_tta-panel-title {
+          a {
+            border-left: 5px solid $primary-color;
+            @extend .primary-color_border;
+            background-color: rgba($primary-color, .03);
+            font-weight: 700;
+            i {
+              color: $primary-color;
+              @extend .primary-color_color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .vc_tta-panels-container {
+    .vc_tta-panels {
+      background-color: transparent !important;
+      box-shadow: 0 0px 20px 0 rgba(15,8,49,0.1);
+      margin-top: 2px !important;
+    }
+  }
+  .vc_tta-panel-body {
+    @media #{$small-only} {
+      padding: 15px !important;
+    }
+    .container {
+      margin-left: -15px;
+      margin-right: -15px;
+      display: flex;
+      @media #{$small-only} {
+        display: block;
+      }
+      .img-wrp {
+        border: 5px solid $primary-color;
+        @extend .primary-color_border;
+        height: 100%;
+        border: 5px solid #0e316b;
+        @media #{$small-only} {
+          margin-bottom: 20px;
+        }
+      }
+      .media {
+        margin-bottom: 40px;
+        .media-left {
+          margin-bottom: 15px;
+          img {
+            margin-right: 15px;
+          }
+          h5 {
+            display: inline-block;
+            margin: 0;
+            font-weight: 600;
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+.wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.custom-accordion .vc_tta-panel.vc_active .vc_tta-panel-heading {
+  background-color: #fff7f7 !important;
+  border: none !important;
+  border-right: 3px solid $primary-color !important;
+  @extend .primary-color_border;
+}
+.wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.custom-accordion .vc_tta-panel .vc_tta-panel-heading,
+.wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.custom-accordion .vc_tta-panel .vc_tta-panel-body {
+  background-color: transparent !important;
+}
+.wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.custom-accordion .vc_tta-panel .vc_tta-panel-body {
+  border-color: transparent !important;
+  p {
+    color: #222;
+  }
+}
+.wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic.custom-accordion .vc_tta-panel .vc_tta-panel-title>a {
+  color: #444 !important;
+}
+div.vc_tta-color-grey.vc_tta-style-classic.custom-accordion .vc_tta-panel.vc_active .vc_tta-panel-title>a .vc_tta-controls-icon::before {
+  border-color: $primary-color !important;
+}

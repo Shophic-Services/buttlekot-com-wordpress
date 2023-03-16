@@ -1,0 +1,136 @@
+// Docs: http://foundation.zurb.com/docs/components/forms.html
+
+// Drupal specific classes
+// ----------------------------------------------------------------------------
+.form-text {}
+.form-submit {}
+
+
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea,
+
+input.wpcf7-submit {
+  box-shadow: none;
+  border-radius: 0;
+}
+.wpcf7-form-control-wrap input, .wpcf7-form-control-wrap textarea, .wpb_wrapper .wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email{
+  background : transparent;
+}
+.searchform {
+  & > div {
+    position : relative;
+  }
+}
+.contact-form {
+  div.large-6, .large-12, .large-9 {
+    position: relative;
+    span {
+      input, select{
+        height: 50px !important;
+        margin-bottom: 20px;
+        background: #fff;
+        padding-left: 15px;
+        border-radius: 2px;
+        font-size: 15px;
+        &::-moz-placeholder {
+          color: #C0BBBB;
+          text-transform: capitalize;
+        }
+      }
+      textarea{
+        max-height: 179px;
+        margin-bottom: 20px;
+        background: #fff;
+        padding-left: 15px;
+        border-radius: 2px;
+        font-size: 15px;
+        &::-moz-placeholder {
+          color: #C0BBBB;
+        }
+      }
+      select{
+        color: #666;
+        &::-moz-placeholder {
+          color: #C0BBBB;
+        }
+      }
+    }
+  }
+  [type="submit"] {
+    width: 100%;
+    @extend .primary-color_bg;
+  }
+}
+
+.brands_form{
+  margin-top: 25px;
+  ul {
+    margin-bottom: 12px;
+    li {
+      position: relative;
+      select {
+        max-width: 240px;
+        width: 240px;
+        height: 41px;
+        background: #fff;
+        border: none;
+        color: #333;
+        text-transform: capitalize;
+        font-family: $body-font-family;
+        font-size: 14px;
+        fint-weight: 400;
+        padding: 0 0 0 20px;
+        @media #{$small-only} {
+          width: 100%;
+          max-width: 100%;
+          margin-left: 0;
+        }
+      }
+      &.brands:after, &.keyword:after, &.year:after{
+        content: "\f0d7";
+        font-family: fontawesome;
+        color: #333;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        font-size: 16px;
+      }
+      .button {
+        border-radius: 5px;
+        padding: 11px 27px;
+        background: #fcc93a;
+        text-transform: uppercase;
+        color: #333;
+        font-size: 14px;
+        margin-top: 1px;
+        @media #{$small-only} {
+          margin-bottom: 0;
+          width: 100%;
+        }
+      }
+      @media #{$small-only} {
+        float: none;
+      }
+    }
+    @media #{$small-only} {
+      margin: 0;
+      > li {
+        margin-left: 0;
+      }
+    }
+  }
+}

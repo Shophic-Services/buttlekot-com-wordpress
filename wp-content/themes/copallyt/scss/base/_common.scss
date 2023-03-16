@@ -1,0 +1,93 @@
+// Common abstract classes to extend or parametrics are stored here.
+
+// Example parametrics.
+// ------------------------------------------------------
+// %font-FONTNAME   {}
+// %font-sans-serif { font-family: sans-serif; }
+// %font-serif      { font-family: serif; }
+body {
+
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+pre {
+  border: 1px solid rgba(0, 0, 0, 0.32);
+  overflow: auto;
+  padding: 20px;
+  white-space: pre-wrap; 
+}
+
+.comment ul {
+  list-style: outside none none;
+}
+.row .row {
+	max-width: $row-width;
+}
+.animated, .animation-parent {
+	overflow: hidden;
+}
+
+.collapse[class*="block-grid-"] > li {
+  padding: 0;
+}
+.wd-vertical-aligned {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+}
+
+// text align right on desktop and center on mobile
+.text-right-m-c {
+  text-align: center !important;
+  @media #{$medium-up}{
+    text-align: right !important;
+  }
+}
+
+.row-delimiter {
+  width: 1px;
+  position: absolute;
+  bottom: 0px;
+  transform: translateY(100%) translateX(900px);
+}
+
+.title_separateur {
+  overflow: visible !important;
+  min-height: 200px;
+  &::before {
+    background: #1770c4;
+    content: "";
+    display: block;
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    bottom: -16px;
+    transform: rotate(45deg);
+    width: 30px;
+  }
+}
+
+.moved-up {
+  @media #{$large-up} {
+    transform: translateY(-99%);
+    position: absolute;
+    max-width: 1170px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+  }
+}
+
+.moved-up-column{
+  @media #{$large-up} {
+    transform: translateY(-25%);
+    position: absolute;
+    max-width: 1170px;
+  }
+}
+
+body.page div.overflow-visible {
+  overflow: visible;
+}

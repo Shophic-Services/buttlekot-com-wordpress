@@ -1,0 +1,8 @@
+[26-May-2021 06:58:21 UTC] PHP Notice:  Undefined property: Vc_Updater::$title in /home/buttlekot/public_html/wp-content/plugins/js_composer/include/classes/updaters/class-vc-updating-manager.php on line 99
+[26-May-2021 21:41:15 UTC] PHP Notice:  Undefined property: Vc_Updater::$title in /home/buttlekot/public_html/wp-content/plugins/js_composer/include/classes/updaters/class-vc-updating-manager.php on line 128
+[06-Aug-2021 21:41:27 UTC] PHP Warning:  Creating default object from empty value in /home/buttlekot/public_html/wp-content/plugins/js_composer/include/classes/updaters/class-vc-updating-manager.php on line 128
+[06-Aug-2021 21:41:27 UTC] PHP Notice:  Undefined property: stdClass::$sections in /home/buttlekot/public_html/wp-content/plugins/js_composer/include/classes/updaters/class-vc-updating-manager.php on line 129
+[06-Aug-2021 21:41:27 UTC] PHP Notice:  Undefined index: changelog in /home/buttlekot/public_html/wp-content/plugins/js_composer/include/classes/updaters/class-vc-updating-manager.php on line 130
+[02-Sep-2021 21:43:14 UTC] PHP Warning:  Creating default object from empty value in /home/buttlekot/public_html/wp-content/plugins/js_composer/include/classes/updaters/class-vc-updating-manager.php on line 128
+[02-Sep-2021 21:43:14 UTC] PHP Notice:  Undefined property: stdClass::$sections in /home/buttlekot/public_html/wp-content/plugins/js_composer/include/classes/updaters/class-vc-updating-manager.php on line 129
+[02-Sep-2021 21:43:14 UTC] PHP Notice:  Undefined index: changelog in /home/buttlekot/public_html/wp-content/plugins/js_composer/include/classes/updaters/class-vc-updating-manager.php on line 130

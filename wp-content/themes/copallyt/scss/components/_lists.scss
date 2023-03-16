@@ -1,0 +1,35 @@
+.main ul {
+	list-style: initial;
+}
+.list-icon li {
+  list-style: none;
+  i {
+    padding-right: 8px;
+  }
+}
+.wd-lists.wd-list-1 li:before {
+  font-family: 'FontAwesome';
+  content: '\f058';
+  margin: 0 12px 0 -15px;
+  color: #DC494F;
+  line-height: 2.3em;
+}
+.wd-partenaire li {
+  padding-bottom:2px;
+  border:solid 1px #eee;
+}
+.social_media{
+  width: 248px;
+  margin: 30px auto 0;
+  li{
+    i{
+      width: 40px;
+      height: 40px;
+      border: 1px solid rgba(51,51,51,0.3);
+      border-radius: 50%;
+      line-height: 40px;
+      text-align: center;
+      @extend .primary-color_color;
+    }
+  }
+}

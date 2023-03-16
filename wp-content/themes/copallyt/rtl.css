@@ -1,0 +1,245 @@
+body {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+@media only screen and (max-width: 899px) {
+  .top-bar .title-area .name {
+    float: left;
+  }
+
+  .top-bar .title-area .menu-icon {
+    float: right;
+  }
+
+  .top-bar .title-area {
+    width: 100%;
+  }
+  .corporate-layout .top-bar .corporate ul li{
+    width: 100%;
+  }
+  .corporate-layout .top-bar .corporate ul li {
+    background: #000;
+  }
+  .top-bar-section .dropdown{
+    left: -100%;
+    background: #000;
+  }
+  .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button){
+    color: #fff;
+  }
+  .corporate-layout .top-bar .corporate ul li.has-dropdown a.js-generated::after {
+    content: "";
+  }
+  .corporate-layout .top-bar .corporate ul li.has-dropdown h5 a::after {
+    content: "";
+  }
+  .corporate-layout .top-bar .corporate ul li.has-dropdown a::after {
+    content: "\f100";
+    font-family: fontawesome;
+    right: 90%;
+    left: auto;
+    border: none;
+    color: #fff;
+  }
+  .top-bar-section .dropdown li a, .top-bar-section .dropdown li.title h5 a{
+    color: #fff;
+  }
+
+}
+
+@media only screen and (min-width: 900px) {
+  .top-bar-section ul.menu {
+    float: left;
+  }
+
+
+
+  .top-bar-section .has-dropdown > a::after {
+    right: auto;
+    right: 5px;
+    top: 45px;
+  }
+
+}
+
+.right,
+.column + .column:last-child,
+.columns + .column:last-child,
+.column + .columns:last-child,
+.columns + .columns:last-child {
+  float: left !important;
+}
+
+.left {
+  float: right !important;
+}
+
+.column, .columns {
+  float: right;
+}
+
+.social-icons.inline-list {
+  margin: 0;
+}
+
+.wpb_tabs .wpb_tabs_nav li.ui-state-default {
+  float: right;
+}
+
+.wpb_accordion .wpb_accordion_wrapper .ui-state-default .ui-icon, .wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon {
+  right: auto !important;
+  left: 0.7em !important;
+}
+
+/*--------------menu ---------------*/
+.top-bar-section .main-nav,
+.top-bar .title-area, .top-bar-section ul li {
+  float: right;
+}
+
+/*----------------carousel-------------------*/
+.wd-carousel-container .carousel-icon, .carousel-details > h3 {
+  text-align: center;
+}
+
+.owl-prev {
+  float: left;
+  left: 0;
+}
+
+/*-----------featurs--------------------*/
+.boxes.small.layout-8 .box-icon {
+  border: none;
+  margin-left: 1em;
+  float: right;
+}
+
+.boxes.small.layout-5 .box-text-5, .boxes.small.layout-5-inverse .box-text-5 {
+  padding-left: 0;
+  padding-right: 8em;
+}
+
+.boxes.small.layout-6 .box-text-6 {
+  padding-right: 22%;
+}
+
+.boxes.small.layout-7 .box-text-7 {
+  padding-right: 9em;
+}
+.boxes.small.layout-8 .box-container .box-icon {
+  padding: 0 0 0 15px;
+}
+/*--------------page header --------------*/
+.position {
+  float: left;
+}
+
+/*----------last post widget -----------*/
+.latest-posts .blog-image img {
+  float: right;
+  margin: 0;
+  margin-left: 10px;
+}
+
+/*---------------blog-------------*/
+.blog-info .arrow {
+  right: 97px;
+  border-width: 15px 15px 15px 0;
+}
+
+.blog-info {
+  margin-right: 0;
+  margin-left: 3%;
+}
+
+.author, .blog-info .comment-count div {
+  text-align: center;
+}
+
+.contact-info > span {
+  padding-right: 0;
+  padding-left: 42px;
+}
+
+.boxes.layout-1 .box-icon,
+.boxes.small .box-container,
+.boxes.layout-1 .box-title-1,
+.l-footer .footer {
+  text-align: right;
+}
+
+.l-footer-columns .newsletter-div .newslettersubmit {
+  right: auto;
+  left: 0;
+}
+
+.l-footer-columns ul li a::before {
+  right: 0;
+  left: auto;
+}
+
+.l-footer-columns .menu-item {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.l-footer-columns .block > div > div li {
+  padding-left: 0;
+  padding-right: 10px;
+}
+.l-footer-columns ul li a::before {
+  content: "\f053";
+}
+.text-right {
+  text-align: left !important;
+}
+
+.text-left {
+  text-align: right !important;
+}
+
+.boxes.small.layout-4 .box-icon,
+.breadcrumbs > * {
+  float: right;
+}
+
+.breadcrumbs {
+  float: left;
+}
+
+.about-presentation-p {
+  padding-right: 0;
+  padding-left: 25px;
+}
+
+.without-icon .boxes.small .box-icon {
+  margin-right: 0;
+  margin-left: 8px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.blog-info {
+  margin-left: 0;
+  margin-right: 0;
+}
+section.corporate .menu-item .sub-menu a {
+  text-align: left;
+}
+.top-bar-section .request-quote {
+  right: auto;
+  left: -180px;
+}
+.blog-post-listing {
+  border: none;
+  border-left: 1px solid #eee;
+  padding-left: 70px;
+  padding-right: 0;
+}
+.sidebar-second {
+  padding-right: 65px;
+  padding-left: 20px;
+}
+.widget_recent_entries ul li::before, .sidebar ul li::before {
+  content: "\f0d9";
+}
